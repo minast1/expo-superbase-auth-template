@@ -4,9 +4,11 @@ import React from 'react';
 import { NativeBaseProvider } from 'native-base';
 import Navigation from './src/navigators';
 import theme from './src/config/theme';
+import { useEffect } from 'react';
 
 export default function App() {
   //console.log(theme)
+
   return (
     <NativeBaseProvider theme={theme}>
       <StatusBar style="auto" />
